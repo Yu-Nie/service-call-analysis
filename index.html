@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Service Call Analysis Report</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 2rem;
+      background-color: #f9f9f9;
+      color: #333;
+    }
+    h1, h2 {
+      color: #003366;
+    }
+    .tag {
+      display: inline-block;
+      padding: 0.3em 0.6em;
+      border-radius: 4px;
+      font-size: 0.9em;
+      color: white;
+    }
+    .tag.complete {
+      background-color: #28a745;
+    }
+    .tag.implicit {
+      background-color: #ffc107;
+      color: black;
+    }
+    .tag.error {
+      background-color: #dc3545;
+    }
+    .section {
+      background: white;
+      padding: 1rem 1.5rem;
+      margin-bottom: 2rem;
+      border-radius: 6px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+    }
+    ul {
+      padding-left: 1.5rem;
+    }
+    .check {
+      margin-bottom: 1.2rem;
+    }
+    .check h3 {
+      margin-bottom: 0.4rem;
+    }
+    .signal-box {
+      background-color: #e8f4ff;
+      padding: 0.8rem;
+      border-left: 4px solid #007bff;
+      margin-top: 1rem;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>📞 Service Call Analysis Report</h1>
+  <p>Overview: The technician performed a repair during the visit, which evolved into a system replacement consultation and upsell toward newer HVAC systems, positioning the repair as temporary ("band-aid").</p>
+
+  <div class="section">
+    <!-- <p><strong>Call Type:</strong> Repair + Sales Consultation</p> -->
+    <!-- <p><strong>Status:</strong> <span class="tag complete">Analysis Complete</span></p> -->
+     <p>
+      <a href="transcript_analysis.html" class="button-link">View Full Transcript and My Comments</a>
+    </p>
+  </div>
+
+  <div class="section">
+    <h2>Compliance Check</h2>
+
+    <div class="check">
+      <h3><span class="tag error">✖</span> Introduction</h3>
+      <p>The technician greeted the customer informally but didn’t introduce themselves or the company formally.</p>
+    </div>
+
+    <div class="check">
+      <h3><span class="tag complete">✔</span> Problem Diagnosis</h3>
+      <p>Discussed freezing, mold, duct issues, and referenced past repairs—showing familiarity with history and system performance trends.</p>
+    </div>
+
+    <div class="check">
+      <h3><span class="tag complete">✔</span> Solution Explanation</h3>
+      <ul>
+        <li>Clearly outlined replacement, inverter tech, rebates, and HVAC layout options</li>
+        <li>Used visuals (attic, closet layout) and real-life examples</li>
+      </ul>
+    </div>
+
+    <div class="check">
+      <h3><span class="tag complete">✔</span> Upsell Attempts</h3>
+      <ul>
+        <li>Offered Daikin, Bryant, and Bosch systems</li>
+        <li>Highlighted quieter operation, defrost resistance, and rebate incentives</li>
+        <li>Discussed optional financing terms and promotions (duct sealing)</li>
+      </ul>
+    </div>
+
+    <div class="check">
+      <h3><span class="tag implicit">⚠</span> Maintenance Plan Offer</h3>
+      <p>Mentioned in context of warranty matching but not explained or formally offered.</p>
+    </div>
+
+    <div class="check">
+      <h3><span class="tag error">✖</span> Closing & Thank You</h3>
+      <p>The call ended with some transactional closing language and confirmation of next steps (“I’ll email you…”, “I’ll eliminate the gas options…”), and a credit card payment was processed.
+        However, there was no formal thank you or warm sign-off (e.g., “Thank you for your time” or “We appreciate your business”),or follow-up scheduled.</p>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2>📈 Sales Insights</h2>
+
+    <h3>✅ What Was Done Well</h3>
+    <ul>
+      <li>Explained technical details in clear, simple terms, highlighted benefits and uses tangible/numerical proofs.</li>
+      <li>Rebates (SVCE, TECH, federal tax credit) were explained clearly</li>
+      <li>Adapted to customer's preferences (noise, airflow, location)</li>
+      <li>Flexible product options and multiple payment plans</li>
+    </ul>
+
+    <h3>❌ Missed Opportunities</h3>
+    <ul>
+      <li>Could have mentioned the benefits of new system to customer’s cat since they had a small talk about pets</li>
+      <li>Did not formally offer the maintenance plan, which could have been positioned as a value add</li>
+      <li>duct sealing upsell was not pursued or explained benefits</li>
+      <li>Daikin mentioned but only focused on company relationship, not product benefits</li>
+      <li>Didn’t Personalize Long-Term Savings or Rebates (eg. "That’s about $10/day — less than lunch out.”), and should have included the saving amount in the options presented</li>
+      <li>Didn't Close on the Spot with a Compelling Offer: Technician hinted at waiving the $1,000 repair fee, but didn’t make the urgency or exclusivity of that offer clear since waiving $1000 can be appealing to most customers</li>
+      <li>Closing felt rushed and lacked a warm, confident sign-off</li>
+    </ul>
+
+    <div class="signal-box">
+      <strong>💡 Sales Signals From Customer</strong>
+      <ul>
+        <li>Customer liked quieter and more efficient systems</li>
+        <li>Preferred Bosch/Daikin over gas-based options</li>
+        <li>Requested monthly payment breakdown (financing interest)</li>
+        <li>Expressed concern about noise and gas safety</li>
+      </ul>
+    </div>
+  </div>
+
+</body>
+</html>
